@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body>
+    <button onclick="off()" id="sof">Switch off</button>
+    <img src="off.gif" alt="off Bulb" id="b" height="100px" width="80px">
+    <button onclick="on()" id="son">Switch on</button>
+    <img src="sadgirl.jpeg" alt="Girl" id="girl" height="100px">
+    <Script>
+        function off(){
+            document.getElementById("b").src = "off.gif"
+            document.getElementById("girl").src = "sadgirl.jpeg"
+            document.getElementById("sof").style.color ="white"
+            document.getElementById("son").style.color ="black"
+        }
+        function on(){
+            document.getElementById("b").src = "on.gif"
+            document.getElementById("girl").src = "hapygirl.jpeg"
+            document.getElementById("son").style.color ="white"
+            document.getElementById("sof").style.color ="black"
+        }
+    </Script>
+</body>
+</html>
